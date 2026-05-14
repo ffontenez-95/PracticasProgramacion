@@ -11,7 +11,7 @@ def calculador_iva(producto):
     iva=0.21
     return  producto * iva
 
-#Definimos el valor del Argumento
+#Definimos el valor de la variable
 producto= 100
  
 #Creamos variable para la funcion 
