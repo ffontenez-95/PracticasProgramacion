@@ -1,11 +1,9 @@
 """
 Cree una funcion que eleve un numero al cuadrado y lo imprima
 """
+def cuadrado(numero):
+    resultado = numero **2
+    print(resultado)
 
-def cuadrado (numero):
-    numero= 5
-    numero= numero*numero
 
-
-    print (numero)
-
+cuadrado(5)
