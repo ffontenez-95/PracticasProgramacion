@@ -25,9 +25,20 @@ def promedio_edades():
             personas_mayores+=edad
             contador_mayores = contador_mayores+ 1
 
-    promedio_mayores= personas_mayores/contador_mayores
-    promedio_menores= personas_menores/contador_menores
-    print(f"El promedio de las edades que son mayores de edad es de {promedio_mayores} y el promedio de las personas menores es de {promedio_menores}")
+    #Se aplica condicional por si no ingrearon edades de mayor edad y tambien condicionales si no ingresan personas de menor edad
+    if contador_menores != 0:
+        promedio_menores= personas_menores/contador_menores
+        print(f"El promedio de las personas menores es de {promedio_menores}")
+    else:
+        print("No se ingresaron personas menores de edad")        
+   
+    if contador_mayores != 0:
+        promedio_mayores= personas_mayores/contador_mayores
+        print(f"El promedio de las edades que son mayores de edad es de {promedio_mayores}")
+        
+    
+    else:
+        print("No seingresaron personas mayores de edad")
 
 
 promedio_edades()
